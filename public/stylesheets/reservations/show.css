@@ -1,0 +1,141 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%; /* equivalent to 10px */
+}
+
+body {
+  color: #000;
+  line-height: 1;
+  font-weight: 300;
+  overflow-x: hidden;
+  background: #ffe1c7;
+}
+
+/* NAVIGATION */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-nav {
+  background: #ffeddd;
+  animation: fadeInAnimation ease 1.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.main-nav-list {
+  width: 97%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link-taki {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-review {
+  margin-left: 4.8rem;
+}
+
+.link-sign-in {
+  margin-left: 4.8rem;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 200;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  text-shadow: 0.2px 0.2px 0.2px #000, 0 0 0.5em #000, 0 0 0.1em #000;
+  transition: 500ms;
+}
+
+.taki-nav-link {
+  font-size: 6.4rem;
+  font-weight: 100;
+}
+
+.taki-nav-link:hover {
+  text-shadow: none;
+}
+
+/* RESREVATION */
+
+.reservation-container {
+  position: absolute;
+  margin: 0 auto;
+  width: 50vw;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.4rem;
+  background-color: #ddb892;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c8a684;
+  transition: 300ms;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.forms-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.details-container p {
+  font-size: 2rem;
+}
+
+.break {
+  flex-basis: 100%;
+}
+
+.date {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+}

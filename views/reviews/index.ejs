@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/reviews/reviews.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <%- include('../partials/flash') %>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li class="link-reservation">
+          <a
+            class="nav-link main-nav-link reserve-nav-link"
+            href="/reservations/choice"
+            >reserve</a
+          >
+        </li>
+        <li class="link-review">
+          <a class="nav-link main-nav-link review-nav-link" href="/reviews"
+            >review</a
+          >
+        </li>
+        <li class="link-taki">
+          <a class="nav-link main-nav-link taki-nav-link" href="/">TAKI</a>
+        </li>
+        <li class="link-menu">
+          <a class="nav-link main-nav-link menu-nav-link" href="/#menu">menu</a>
+        </li>
+        <li class="link-sign-in">
+          <a class="nav-link main-nav-link menu-nav-link" href="/users/login"
+            >sign in
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="reviews-container">
+      <h1>Reviews</h1>
+
+      <% for( let review of reviews ) { %>
+      <div class="review-card">
+        <div class="review-name">
+          <p><%=review.forename%></p>
+          <p><%=review.surname%></p>
+        </div>
+        <div class="review-review">
+          <p><%=review.review%></p>
+        </div>
+        <div class="review-rating">
+          <p><%=review.rating%></p>
+        </div>
+        <div class="review-delete">
+          <% if (currentUser===review.username) { %>
+          <form
+            action="/reviews/delete/<%= review._id %>?_method=DELETE"
+            method="POST"
+          >
+            <button class="btn-delete">Delete</button>
+          </form>
+          <% } %>
+        </div>
+      </div>
+      <% } %>
+      <button class="btn-review">
+        <a href="reviews/create">leave a review</a>
+      </button>
+    </div>
+
+    <div class="side-bar-right">
+      <div class="right">
+        <p></p>
+      </div>
+      <div class="left">
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<% if(success && success.length) {%>
+<div class="alert success">
+  <span class="closebtn">&times;</span>
+  <strong><%=success%></strong>
+</div>
+<% } %> <% if(error && error.length) {%>
+<div class="" role="alert">
+  <%= error %>
+  <button type="button" class="" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<% } %>
+
+<script>
+  var close = document.getElementsByClassName("closebtn");
+  var i;
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      var div = this.parentElement;
+      div.style.opacity = "0";
+      setTimeout(function () {
+        div.style.display = "none";
+      }, 600);
+    };
+  }
+</script>

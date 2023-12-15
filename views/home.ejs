@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheets/home/home_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="background-image overlay">
+      <div class="header-overlay ">
+        <head class="header ">
+          <nav class="main-nav ">
+            <nav class="second-nav">
+              <a href="/" class="second-taki"> TAKI </a>
+              <div id="hidden-nav" class="overlay-nav">
+                <a
+                  href="javascript:void(0)"
+                  class="close-btn"
+                  onclick="close_nav()"
+                  >&times;</a
+                >
+  
+                <div class="overlay-content">
+                  <a href="/">Home</a>
+                  <a href="/#menu">Menu</a>
+                  <a href="/#reservation">Reserve</a>
+                  <a href="/reviews">Reviews</a>
+                  <a href="/users/login">Sign In</a>
+                </div>
+              </div>
+  
+              <span onclick="open_nav()" class="open-nav"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M3 6h18M3 12h18M3 18h18"
+                  />
+                </svg>
+              </span>
+            </nav>
+            <ul class="main-nav-list " >
+              <li class="link-reservation">
+                <a
+                  class="nav-link main-nav-link reserve-nav-link"
+                  href="#reservation"
+                  >reserve</a
+                >
+              </li>
+              <li class="link-review">
+                <a class="nav-link main-nav-link review-nav-link" href="#review"
+                  >review</a
+                >
+              </li>
+              <li class="link-taki">
+                <a class="nav-link main-nav-link taki-nav-link" href="#home"
+                  >TAKI</a
+                >
+              </li>
+              <li class="link-menu">
+                <a class="nav-link main-nav-link menu-nav-link" href="#menu"
+                  >menu</a
+                >
+              </li>
+              <li class="link-sign-in">
+                
+                  <a class="nav-link main-nav-link menu-nav-link" href="users/login"
+                  >sign in
+                </a>
+                
+                 
+                 
+                
+              </li>
+            </ul>
+          </nav>
+        </head>
+      </div>
+
+      <section id="test" class="section-landing" > 
+        <div class="landing-text-box " >
+          <p class="landing-welcome-text">
+            Welcome, here's some text to look good
+          </p>
+          <h1 class="landing-heading">
+            Great tastes, <br />
+            Good times
+          </h1>
+          <div class="landing-btn-container">
+            <a href="reservations/choice">
+              <button class="landing-btn landing-btn-reserve">RESERVE</button>
+            </a>
+            <a href="reviews">
+              <button class="landing-btn landing-btn-menu">REVIEW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="menu" class="section-menu">
+      <div class="container-heading ">
+        <ion-icon class="icon-menu fade-in-up-on-scroll" name="restaurant-outline"></ion-icon>
+        <h2 class="menu-heading fade-in-up-on-scroll">
+          Enjoin us in enlightening our senses and <br />
+          create a new definition to taste
+        </h2>
+
+      </div>
+        <div class="container-menu fade-in-up-on-scroll ">
+
+          <a href="menu/view_beverages">
+          <div class="menu-card overlay">
+            <img src="images/menu-beverage-1.jpg" alt="" />
+            <div class="centered drinks"><h3>Drinks Menu</h3></div>
+          </div>
+        </a>
+
+        <a href="menu/view_dining">
+          <div id="divItem" class="menu-card">
+            <img src="images/menu-dining-1.jpg" alt="" />
+            <div class="centered"><h3>Dining Menu</h3></div>
+          </div>
+        </a>
+  
+      <a href="menu/view_deserts">
+        <div class="menu-card">
+          <img src="images/menu-desert-1.jpg" alt="" />
+          <div class="centered"><h3>Desert Menu</h3></div>
+        </div>
+      </a>
+      </div>
+      </div>
+
+    </section>
+
+    <section id="reservation" class="section-reservation">
+      <div class="left-side"></div>
+
+      <div class="right-side">
+      
+
+        <div class="right-side-content fade-in-up-on-scroll">
+          <h2>Reserve a place now</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+            libero ullam molestias, sint sed enim expedita tenetur voluptatem
+            deserunt quis nihil temporibus quo dolore
+          </p>
+          <a href="reservations/choice">
+            <button>Reserve Now</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="section-review">
+      <div class="grid2 fade-in-up-on-scroll">
+        <div class="grid-content2">
+          <div class="review-card">
+            <h2 class="review-name">Rafi Kyum</h2>
+            <span class="review-date">17 / 09 / 22</span>
+            <p class="review-text">
+              Please read our unfiltered reviews, Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore ducimus assumenda. Doloremque quas quaerat, fugiat pariatur ex molestiae laboriosam!
+            </p>
+            <a href="reviews">
+              <button class="btn-review">Read Reviews</button>
+            </a>
+          </div>
+        </div>
+        <img class="image2" src="images/review-image.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer id="footer" class="section-footer">
+      <div class="grid-footer">
+        <div class="main-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="reservations/show">Reservations</a>
+          <a href="reviews">Reviews</a>
+          <a href="users/login" id="login">Log In</a>
+          <div class="icon-thing">
+            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+            <ion-icon class="icon" name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+        <div class="tag-column">
+          <div class="tag-set tag-set-hours">
+            <h2 class="tag-set-heading">Hours</h2>
+            <p>+ Monday-Wednseday: 11am-9pm</p>
+            <p>+ Thursday-Saturday: 11am-10pm</p>
+            <p>+ Closed: Sundays</p>
+          </div>
+          <div class="tag-set">
+            <h2 class="tag-set-heading">Address</h2>
+            <p>
+              + 34 Charlotte St, <br />
+              London, England: W1T 2NH
+            </p>
+          </div>
+          <div class="tag-set">
+            <h2 class="tag-set-heading">Contact</h2>
+            <p>+ 020 7636 1178</p>
+            <p>+ takicontact@takirestaurant.com</p>
+          </div>
+        </div>
+        <div class="tag-column-second">
+          <div class="tag-set tag-set-dining">
+            <h2 class="tag-set-heading">Dining</h2>
+            <p>+ Fine dining in central London Available throughout the year</p>
+          </div>
+          <div class="tag-set">
+            <h2 class="tag-set-heading">Reservations</h2>
+            <p>+ 12 week notices recommended</p>
+          </div>
+        </div>
+      </div>
+      <a href="" class="taki">
+        <h2>TAKI</h2>
+      </a>
+    </footer>
+
+    <script>
+      function open_nav() {
+        document.getElementById("hidden-nav").style.width = "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function close_nav() {
+        document.getElementById("hidden-nav").style.width = "0%";
+      }
+
+    </script>
+
+    <script>
+      const elementsToFadeInUpOnScroll = document.querySelectorAll(".fade-in-up-on-scroll");
+if (elementsToFadeInUpOnScroll) {
+  window.addEventListener("scroll", function(event) {
+    elementsToFadeInUpOnScroll.forEach(function(element) {
+      if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
+        element.classList.add("fade-in-up");
+      } else {
+        element.classList.remove("fade-in-up");
+      }
+    });
+  });
+} 
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      const { isLoggedIn } = require("../middleware");
+      const login = document.getElementById('login')
+      console.log(isLoggedInText)
+    </script>
+  </body>
+</html>

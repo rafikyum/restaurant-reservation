@@ -1,0 +1,107 @@
+.second-nav {
+  display: none;
+}
+
+.open-nav {
+  display: none;
+  color: #fff;
+  margin-left: auto;
+}
+
+.open-nav svg {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+@media (max-width: 58em) {
+  html {
+    font-size: 50%;
+  }
+
+  .second-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .open-nav {
+    display: block;
+  }
+
+  span {
+    font-size: 3.2rem;
+  }
+
+  /* The Overlay (background) */
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #7d6145e6;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 1.2rem;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    text-shadow: 1px 1px 2px #c0a07e, 0 0 3em #c0a07e, 0 0 0.3em #c0a07e;
+    color: #f1f1f1;
+  }
+
+  .overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close-btn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .second-nav {
+    display: flex;
+    padding-top: 3.2rem;
+    z-index: 1;
+  }
+
+  .second-nav a {
+    font-size: 5.6rem;
+    color: #fff;
+    font-weight: 200;
+  }
+
+  .second-nav:hover {
+    text-shadow: 0.2px 0.2px 0.2px #fff, 0 0 0.5em #fff, 0 0 0.1em #fff;
+    transition: 500ms;
+  }
+
+  .main-nav-list {
+    display: none;
+  }
+}

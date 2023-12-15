@@ -1,0 +1,199 @@
+/* GENERAL */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 67.5%; /* equivalent to 10px */
+}
+
+body {
+  background: #ffe1c7;
+}
+
+/* NAVIGATION */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-nav {
+  background: #ffeddd;
+  animation: fadeInAnimation ease 1.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.main-nav-list {
+  width: 97%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link-taki {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-review {
+  margin-left: 4.8rem;
+}
+
+.link-sign-in {
+  margin-left: 4.8rem;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 200;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  text-shadow: 0.2px 0.2px 0.2px #000, 0 0 0.5em #000, 0 0 0.1em #000;
+  transition: 500ms;
+}
+
+.taki-nav-link {
+  font-size: 6.4rem;
+  font-weight: 100;
+}
+
+.taki-nav-link:hover {
+  text-shadow: none;
+}
+
+/* FORMS */
+
+.form-container {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: centre;
+  justify-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.container input {
+  padding: 1.2rem 2.4rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  width: 40vw;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.container input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container input:hover {
+  background-color: #f7d8be;
+}
+
+.btn:hover {
+  background-color: #a17c57;
+  transition: 300ms;
+  border: none;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  background-color: transparent;
+  margin-top: 1.2rem;
+  border: 1px solid #000;
+  width: 30vw;
+  align-self: center;
+}
+
+/* SIDE-BAR */
+
+.right {
+  margin-top: 0.35rem;
+  float: right;
+  width: 4rem;
+  height: 100vh;
+  background-image: url("/images/church-on-sunday.svg");
+}
+
+.left {
+  margin-top: 0.35rem;
+  overflow: hidden;
+  height: 100vh;
+  width: 4rem;
+  background-image: url("/images/church-on-sunday.svg");
+  transform: scaleX(-1);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 102em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 42.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 32%;
+  }
+}

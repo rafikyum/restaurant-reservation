@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/users/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>llogin</title>
+  </head>
+
+  <body>
+    <section class="login-section">
+      <div class="left-side">
+        <form
+          action="/users/login"
+          method="POST"
+          class="validated-form centered"
+          novalidate
+        >
+          <div class="login-container">
+            <h1 class="heading">Welcome Back</h1>
+            <p class="login-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit yani unt.
+            </p>
+
+            <label for="username" class="user-label">Username</label>
+            <input
+              class="login-input"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+
+            <label for="password" class="pass-label">Password</label>
+            <input
+              class="pass-input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+
+            <button class="login-button">Login</button>
+
+            <footer class="login-footer">
+              Don't have an account ?
+              <a href="/users/register">Register Here</a>
+            </footer>
+          </div>
+        </form>
+      </div>
+      <div class="right-side">
+        <div class="background-image"></div>
+      </div>
+    </section>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  </body>
+</html>

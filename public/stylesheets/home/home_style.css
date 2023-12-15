@@ -1,0 +1,1069 @@
+/* 
+
+---- TYPOGRAPHY SYSTEM
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Font weights: 
+  default: 400
+  medium: 500
+  semi-bold: 600
+  bold: 700
+
+- Line heights: 
+  default: 1
+  small: 1.05
+  medium: 1.2
+  paragraph default: 1.6
+  Large: 1.8
+
+- Letter spacing
+  -0.5px
+  0.75px
+  
+  font-family: "Montserrat", sans-serif;
+  font-family: "Newsreader", serif;
+  font-family: "Inter", sans-serif;
+  
+---- WHITESPACE
+- Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  
+  */
+
+/* 
+///////////////////
+      GENERAL
+///////////////////
+*/
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%; /* equivalent to 10px */
+}
+
+body {
+  color: #000;
+  line-height: 1;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+.background-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(/images/main-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 122.5rem;
+}
+
+.container {
+  margin-left: 16rem;
+  max-width: 120rem; /*1200px max width for a container is a standard value (it could also be 1140px) */
+  padding: 0 2.8rem;
+  margin: 0 auto;
+}
+
+.container-menu {
+  max-width: 140rem; /*1200px max width for a container is a standard value (it could also be 1140px) */
+  padding: 0 2.8rem;
+  margin: 0 auto;
+}
+
+/* 
+///////////////////
+NAV LIST
+///////////////////
+*/
+
+.header-overlay {
+  padding: 2.4rem;
+  background: linear-gradient(to top, transparent 0%, #000 100%);
+  animation: fadeInAnimation ease 1.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-nav-list {
+  width: 97%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link-taki {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-review {
+  margin-left: 4.8rem;
+}
+
+.link-sign-in {
+  margin-left: 4.8rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 200;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+  transition: 500ms;
+}
+
+.taki-nav-link {
+  font-size: 6.4rem;
+  font-weight: 100;
+}
+
+.taki-nav-link:hover {
+  text-shadow: none;
+}
+
+.second-nav {
+  display: none;
+}
+
+.open-nav {
+  display: none;
+  color: #fff;
+  margin-left: auto;
+}
+
+.open-nav svg {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+/* 
+////////////////////
+    LANDING PAGE
+////////////////////
+*/
+
+.section-landing {
+  margin-left: 16rem;
+  animation: fadeInAnimation ease 1.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.landing-text-box {
+  color: #fff;
+  position: absolute;
+  top: 28%;
+}
+
+.landing-welcome-text {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.landing-heading {
+  margin: 1.4rem 0 3.2rem 0;
+  font-size: 13.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.landing-btn-container {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.landing-btn {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.landing-btn:hover {
+  background: #a17c57;
+  border: 1px solid transparent;
+  transition: 350ms;
+}
+
+.landing-btn-reserve {
+  padding: 2.3rem 6.4rem;
+}
+
+.landing-btn-menu {
+  padding: 2.3rem 4.8rem;
+}
+
+/* 
+////////////////////
+     MENU PAGE
+////////////////////
+*/
+
+.hideme {
+  opacity: 0;
+}
+
+.container-heading {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 200;
+}
+
+.section-menu {
+  padding-top: 14.2rem;
+  background: #ffe1c7;
+  height: 130rem;
+}
+
+.icon-menu {
+  --ionicon-stroke-width: 1.8rem;
+  margin-bottom: 2.4rem;
+  font-size: 4.6rem;
+}
+
+.container-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-card img {
+  height: 65rem;
+}
+
+.menu-card:hover {
+  box-shadow: 0 4.8rem 4.8rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2%);
+  transition: 500ms;
+}
+
+.menu-card h3 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.centered {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  text-shadow: 1px 1px 4px #000, 0 0 1em #fff, 0 0 0.2em #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in-up {
+  animation: 0.75s both fadeInUp;
+}
+
+.menu-heading {
+  line-height: 1.3;
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 12.4rem;
+  letter-spacing: 1px;
+}
+
+.container-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+////////////////////
+  RESERVATION PAGE
+////////////////////
+*/
+
+.section-reservation {
+  display: flex;
+}
+
+.left-side {
+  height: 170rem;
+  background-image: url(/images/restaurant-6-mirror.jpg);
+  flex: 1;
+}
+
+.right-side {
+  height: 170rem;
+  background-color: #36241c;
+  flex: 0.9;
+}
+
+.right-side-content {
+  margin-top: 72rem;
+  margin-left: 4.8rem;
+  width: 50%;
+}
+
+.right-side-content h2 {
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.right-side-content p {
+  margin-top: 4.8rem;
+  margin-bottom: 4.2rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #fff;
+  font-weight: 200;
+}
+
+.right-side-content button {
+  border: 1px solid #fff;
+  padding: 2.4rem 4.8rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 200;
+}
+
+.right-side-content button:hover {
+  border: 1px solid transparent;
+  padding: 2.4rem 4.8rem;
+  background-color: #241c1c;
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 200;
+  transition: 350ms;
+}
+
+/* 
+////////////////////
+     REVIEW PAGE
+////////////////////
+*/
+
+.section-review {
+  display: flex;
+  background: #ffe1c7;
+  padding-top: 30rem;
+  padding-bottom: 10rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(11, 15rem);
+  grid-template-rows: repeat(4, 22rem);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image2,
+.grid-content2 {
+  grid-row: 1/2;
+}
+
+.image2 {
+  grid-column: 5/-1;
+  grid-row: 2/4;
+  align-self: center;
+  width: 105rem;
+  height: 70rem;
+}
+
+.grid-content2 {
+  grid-column: 1/3;
+  width: 70rem;
+  height: 70rem;
+  background: #ddb892;
+  border-top: #a17c57 solid 10px;
+}
+
+.review-card {
+  margin-top: 7rem;
+  margin-left: 4.8rem;
+  width: 70%;
+}
+
+.review-name {
+  font-weight: 300;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 2.4rem;
+}
+
+.review-date {
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+
+.review-text {
+  font-weight: 200;
+  margin-top: 0.8rem;
+  font-size: 2.2rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.btn-review {
+  padding: 2.4rem 4.2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  background-color: #a17c57;
+  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-review:hover {
+  background: transparent;
+  border: 2px solid #a17c57;
+  transition: 350ms;
+}
+
+/* 
+////////////////////
+     FOOTER PAGE
+////////////////////
+*/
+
+.section-footer {
+  padding-top: 10rem;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    #f2d1b0 0%,
+    #f2d1b0 50%,
+    #ffe1c7 50%,
+    #ffe1c7 100%
+  );
+}
+
+.grid-footer {
+  background: #c0a07e;
+  width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 44% 27% 27%;
+  grid-template-rows: 45rem;
+}
+
+.tag-column-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-column-second {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4.8rem;
+}
+
+.main-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 3.6rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+  margin-left: 8.4rem;
+}
+
+.main-links a:hover {
+  text-shadow: 1px 1px 2px #ddb892, 0 0 2em #ddb892, 0 0 0.2em #ddb892;
+  transition: 350ms;
+}
+
+.main-links a:first-child {
+  margin-top: 5.6rem;
+}
+
+.tag-set {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.tag-set-hours,
+.tag-set-dining {
+  margin-top: 5.6rem;
+}
+
+.tag-set-heading {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  background: #a17c57;
+  display: inline-block;
+  padding: 0.5px 10px;
+}
+
+.tag-set p {
+  margin-top: 0.8rem;
+}
+
+.icon-thing {
+  display: flex;
+  font-size: 2.4rem;
+  margin-left: 8.4rem;
+  margin-top: 4.8rem;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+footer {
+  background: #ffe1c7;
+}
+
+.taki h2 {
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  font-size: 4.2rem;
+  font-weight: 200;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.taki:hover {
+  text-shadow: 1px 1px 2px #c0a07e, 0 0 2em #c0a07e, 0 0 0.2em #c0a07e;
+  cursor: pointer;
+}
+
+/* QUERIES*/
+
+/*
+collapse marks : 
+  - review box : 106
+  - menu : 92
+*/
+
+/* LANDING PAGE CHANGES */
+
+@media (max-width: 106rem) {
+  .background-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url(/images/main-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92rem;
+  }
+
+  .section-review {
+    display: flex;
+    background: #ffe1c7;
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(10, 11rem);
+    grid-template-rows: repeat(16, 6rem);
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .image2,
+  .grid-content2 {
+    grid-row: 1/4;
+  }
+
+  .image2 {
+    grid-column: 2/6;
+    grid-row: 10/16;
+    align-self: center;
+    width: 90rem;
+    height: 60rem;
+  }
+
+  .grid-content2 {
+    grid-column: 3/8;
+    width: 70rem;
+    height: 60rem;
+    background: #ddb892;
+    border-top: #a17c57 solid 10px;
+  }
+
+  .review-card {
+    margin-top: 7rem;
+    margin-left: 4.8rem;
+    width: 70%;
+  }
+
+  .review-name {
+    font-weight: 300;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 2.4rem;
+  }
+
+  .review-date {
+    font-weight: 200;
+    font-size: 1.6rem;
+  }
+
+  .review-text {
+    font-weight: 200;
+    margin-top: 0.8rem;
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn-review {
+    padding: 2.2rem 3.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    background-color: #a17c57;
+    border: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .btn-review:hover {
+    background: transparent;
+    border: 2px solid #a17c57;
+    transition: 350ms;
+  }
+}
+
+@media (max-width: 102em) {
+  html {
+    font-size: 50%;
+  }
+
+  .landing-text-box {
+    position: absolute;
+    top: 18%;
+  }
+
+  .landing-heading {
+    font-size: 11rem;
+  }
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 50%;
+  }
+
+  .link-review {
+    margin-left: 4.8rem;
+  }
+
+  .link-sign-in {
+    margin-left: 4.8rem;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-weight: 200;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+  }
+
+  .nav-link:hover {
+    text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+    transition: 500ms;
+  }
+
+  .taki-nav-link {
+    font-size: 4.8rem;
+    font-weight: 100;
+  }
+
+  /* 
+//////////////////////////
+    LANDING PAGE QUERIES
+//////////////////////////
+*/
+
+  .section-landing {
+    margin-left: 16rem;
+    animation: fadeInAnimation ease 1.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .landing-text-box {
+    color: #fff;
+    position: absolute;
+    top: 18%;
+  }
+
+  .landing-welcome-text {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  .landing-heading {
+    margin: 1.4rem 0 3.2rem 0;
+    font-size: 9.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .landing-btn-container {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .landing-btn {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .landing-btn:hover {
+    background: #a17c57;
+    border: 1px solid transparent;
+    transition: 350ms;
+  }
+
+  .landing-btn-reserve {
+    padding: 2.2rem 5.8rem;
+  }
+
+  .landing-btn-menu {
+    padding: 2.2rem 4.2rem;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-landing {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    animation: fadeInAnimation ease 1.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .landing-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+  }
+
+  .landing-heading {
+    font-size: 9.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .landing-text-box {
+    position: absolute;
+    top: 18%;
+  }
+
+  .landing-btn-container {
+    gap: 2.4rem;
+  }
+
+  .landing-btn-container {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .landing-welcome-text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  .landing-heading {
+    margin: 1.4rem 0 3.2rem 0;
+    font-size: 7.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+/* BURGUR NAV CHANGES */
+@media (max-width: 42em) {
+  .landing-heading {
+    font-size: 6.4rem;
+  }
+
+  .landing-btn-reserve {
+    padding: 2.2rem 4.8rem;
+  }
+
+  .landing-btn-menu {
+    padding: 2.2rem 3.2rem;
+  }
+
+  .second-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav-list {
+    display: none;
+  }
+
+  .open-nav {
+    display: block;
+  }
+
+  /* The Overlay (background) */
+  .overlay-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    background-color: #000000e6;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 3.6rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 1.2rem;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    text-shadow: 1px 1px 2px #c0a07e, 0 0 3em #c0a07e, 0 0 0.3em #c0a07e;
+    color: #f1f1f1;
+  }
+
+  .overlay .close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 4.5rem;
+    font-size: 6.2rem;
+  }
+
+  .second-nav {
+    display: flex;
+
+    z-index: 1;
+  }
+
+  .second-nav a {
+    font-size: 5.6rem;
+    color: #fff;
+    font-weight: 200;
+  }
+
+  .second-nav:hover {
+    text-shadow: 0.2px 0.2px 0.2px #fff, 0 0 0.5em #fff, 0 0 0.1em #fff;
+    transition: 500ms;
+  }
+
+  .main-nav-list {
+    display: none;
+  }
+}
+
+/* RESERVATION PAGE CHANGES */
+@media (max-width: 48em) {
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    flex: none;
+  }
+}
+
+/* MENU PAGE CHANGES */
+@media (max-width: 70em) {
+  .container-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-card img {
+    height: 50rem;
+    width: 35rem;
+  }
+
+  .menu-heading {
+    font-size: 2.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .section-menu {
+    padding-top: 9.6rem;
+    height: 122.5vh;
+  }
+}
+
+/* REVIEW PAGE CHANGES */
+@media (max-width: 58em) {
+  .image2 {
+    display: none;
+  }
+
+  .grid2 {
+    display: flex;
+    width: 100vw;
+  }
+
+  .grid-content2 {
+    display: flex;
+    width: 100vw;
+    height: 70rem;
+    background: #ddb892;
+    border-top: #a17c57 solid 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-text {
+    text-align: center;
+  }
+}
+
+/* FOOTER CHANGES */
+@media (max-width: 62em) {
+  .section-footer {
+    display: flex;
+  }
+
+  .taki {
+    display: none;
+  }
+
+  .grid-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.4rem;
+  }
+  .tag-column {
+    display: none;
+  }
+  .tag-column-second {
+    display: none;
+  }
+
+  .icon-thing {
+    display: none;
+  }
+}
+
+@media (max-width: 34em) {
+  .landing-text-box {
+    top: 16.5%;
+  }
+
+  .section-landing {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    animation: fadeInAnimation ease 1.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .landing-text-box {
+    align-items: center;
+  }
+}

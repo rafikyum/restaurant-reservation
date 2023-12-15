@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/menu/menu_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beverage</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="background-image">
+        <nav class="main-nav">
+          <nav class="second-nav">
+            <a href="/" class="second-taki"> TAKI </a>
+            <div id="hidden-nav" class="overlay">
+              <a
+                href="javascript:void(0)"
+                class="close-btn"
+                onclick="close_nav()"
+                >&times;</a
+              >
+
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/#menu">Menu</a>
+                <a href="/#reservation">Reserve</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/users/login">Sign In</a>
+              </div>
+            </div>
+
+            <span onclick="open_nav()" class="open-nav"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M3 6h18M3 12h18M3 18h18"
+                />
+              </svg>
+            </span>
+          </nav>
+          <ul class="main-nav-list">
+            <li class="link-reservation">
+              <a
+                class="nav-link main-nav-link reserve-nav-link"
+                href="#reservation"
+                >reserve</a
+              >
+            </li>
+            <li class="link-review">
+              <a class="nav-link main-nav-link review-nav-link" href="/#review"
+                >review</a
+              >
+            </li>
+            <li class="link-taki">
+              <a class="nav-link main-nav-link taki-nav-link" href="/">TAKI</a>
+            </li>
+            <li class="link-menu">
+              <a class="nav-link main-nav-link menu-nav-link" href="/#menu"
+                >menu</a
+              >
+            </li>
+            <li class="link-sign-in">
+              <a class="nav-link main-nav-link menu-nav-link" href="users/login"
+                >sign in
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="section-nav">
+      <nav class="">
+        <nav class="second-nav-2">
+          <div id="hidden-nav-2" class="overlay">
+            <a
+              href="javascript:void(0)"
+              class="close-btn"
+              onclick="close_nav_2()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="">Beverage</a>
+              <a href="/menu/view_dining">Dining</a>
+              <a href="/menu/view_deserts">Desert</a>
+            </div>
+          </div>
+
+          <span onclick="open_nav_2()" class="open-nav-2"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M3 6h18M3 12h18M3 18h18"
+              />
+            </svg>
+          </span>
+        </nav>
+        <ul class="nav-list-main">
+          <li class="nav-list-item">
+            <a href="view_beverages">Beverage</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="view_dining">Dining</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="view_deserts">Desert</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="view_beverages">Special</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="section-menu">
+      <div class="tab">
+        <div class="tab-content">
+          <h2>Appetisers</h2>
+          <ul>
+            <a href="#salad-container"><li>Salads & Soups</li></a>
+            <a href="#pasta-container"><li>Pasta</li></a>
+            <a href="#poultry-container"><li>Poultry</li></a>
+            <a href="#meat-container"><li>Meat</li></a>
+            <a href="#sushi-container"><li>Sushi</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-content">
+        <h2 class="appetiser-heading">Dining</h2>
+        <div class="menu-item-container">
+          <div class="food-container salad-container" id="salad-container">
+            <div class="food-container-sub-heading">
+              <h2>Salads & Soups</h2>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">House Smoked Manhattan | 14</h3>
+              <p class="menu-item-content">
+                House-smoked bourbon, Antiac Carpano sweet vermouth & black
+                walnute bitters. Garnished with a luxardo cherry.
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">House Smoked Manhattan | 14</h3>
+              <p class="menu-item-content">
+                House-smoked bourbon, Antiac Carpano sweet vermouth & black
+                walnute bitters. Garnished with a luxardo cherry.
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">House Salad | 14</h3>
+              <p class="menu-item-content">
+                Roamine, iceberg, red cabbage, carrots, cucumbers and cherry
+                tomatoes
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Chef Salad | 14</h3>
+              <p class="menu-item-content">
+                Roamiane, smoked turkey, honey ham, tomato, egg and cucumber
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Greek Salad | 14</h3>
+              <p class="menu-item-content">
+                Kalamata olives, cucumber, red onion and feta
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Wedge Salad | 14</h3>
+              <p class="menu-item-content">
+                Iceberg lettuce, bacon, tomato and blue cheese crumbles
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Mixed Greens | 14</h3>
+              <p class="menu-item-content">
+                Mixed greens, cucumber, tomatoes, cheese and a vinagrette
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Caeser | 14</h3>
+              <p class="menu-item-content">
+                Romaaine lettuce toassed with our homemade caesar dressing,
+                topped with parmesan cheese and croutons
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">
+                Portobello Blue Cheese Soup | 14
+              </h3>
+              <p class="menu-item-content">
+                Grilled portobellos in a rich mushroom broth paired with smokey
+                bleu cheese
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Cream of Wild Mushroom | 14</h3>
+              <p class="menu-item-content">
+                With three varieties of fresh wild mushrooms
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">French Onion | 14</h3>
+              <p class="menu-item-content">
+                Beef borth, carmaelized onion, corsitini with mozzarella
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Thai Lime Prawn Soup | 14</h3>
+              <p class="menu-item-content">
+                With lemongrass, kafir lime leaves & spring onions
+              </p>
+            </div>
+          </div>
+          <div class="food-container pasta-container" id="pasta-container">
+            <div class="food-container-sub-heading">
+              <h2>Pasta</h2>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Fettuccine Alla Matriciana | 1</h3>
+              <p class="menu-item-content">
+                Fettuccine with ham, onions, chilles in a tomato sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Crespelle Alla Fiorentina | 2</h3>
+              <p class="menu-item-content">
+                Homemad pancakes filled with mozzarella, ricotta cheese and
+                spinach in a cream and tomato sauce & baked in the oven
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta Del Cafone | 3</h3>
+              <p class="menu-item-content">
+                Penne with neapolitan sausages, broccoli, chilli, garlic, white
+                wine & olive oil
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Cannelloni Pulcinella | 4</h3>
+              <p class="menu-item-content">
+                Rolled fresh pasta stuffed with meat cooked in a tomato and
+                cream sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta San Nicola | 5</h3>
+              <p class="menu-item-content">
+                Fettucine with parma ham, mushrooms, olives, gralic white wine &
+                tomato
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Gnocchi Alla Sorrentina | 6</h3>
+              <p class="menu-item-content">
+                Italian style potato & flour dumplings with tomato, basil &
+                mozzarella cheese
+              </p>
+            </div>
+          </div>
+          <div class="food-container pasta-container" id="poultry-container">
+            <div class="food-container-sub-heading">
+              <h2>Poultry</h2>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Fettuccine Alla Matriciana | 1</h3>
+              <p class="menu-item-content">
+                Fettuccine with ham, onions, chilles in a tomato sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Crespelle Alla Fiorentina | 2</h3>
+              <p class="menu-item-content">
+                Homemad pancakes filled with mozzarella, ricotta cheese and
+                spinach in a cream and tomato sauce & baked in the oven
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta Del Cafone | 3</h3>
+              <p class="menu-item-content">
+                Penne with neapolitan sausages, broccoli, chilli, garlic, white
+                wine & olive oil
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Cannelloni Pulcinella | 4</h3>
+              <p class="menu-item-content">
+                Rolled fresh pasta stuffed with meat cooked in a tomato and
+                cream sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta San Nicola | 5</h3>
+              <p class="menu-item-content">
+                Fettucine with parma ham, mushrooms, olives, gralic white wine &
+                tomato
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Gnocchi Alla Sorrentina | 6</h3>
+              <p class="menu-item-content">
+                Italian style potato & flour dumplings with tomato, basil &
+                mozzarella cheese
+              </p>
+            </div>
+          </div>
+          <div class="food-container pasta-container" id="meat-container">
+            <div class="food-container-sub-heading">
+              <h2>Meat</h2>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Fettuccine Alla Matriciana | 1</h3>
+              <p class="menu-item-content">
+                Fettuccine with ham, onions, chilles in a tomato sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Crespelle Alla Fiorentina | 2</h3>
+              <p class="menu-item-content">
+                Homemad pancakes filled with mozzarella, ricotta cheese and
+                spinach in a cream and tomato sauce & baked in the oven
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta Del Cafone | 3</h3>
+              <p class="menu-item-content">
+                Penne with neapolitan sausages, broccoli, chilli, garlic, white
+                wine & olive oil
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Cannelloni Pulcinella | 4</h3>
+              <p class="menu-item-content">
+                Rolled fresh pasta stuffed with meat cooked in a tomato and
+                cream sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta San Nicola | 5</h3>
+              <p class="menu-item-content">
+                Fettucine with parma ham, mushrooms, olives, gralic white wine &
+                tomato
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Gnocchi Alla Sorrentina | 6</h3>
+              <p class="menu-item-content">
+                Italian style potato & flour dumplings with tomato, basil &
+                mozzarella cheese
+              </p>
+            </div>
+          </div>
+          <div class="food-container pasta-container" id="sushi-container">
+            <div class="food-container-sub-heading">
+              <h2>Sushi</h2>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Fettuccine Alla Matriciana | 1</h3>
+              <p class="menu-item-content">
+                Fettuccine with ham, onions, chilles in a tomato sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Crespelle Alla Fiorentina | 2</h3>
+              <p class="menu-item-content">
+                Homemad pancakes filled with mozzarella, ricotta cheese and
+                spinach in a cream and tomato sauce & baked in the oven
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta Del Cafone | 3</h3>
+              <p class="menu-item-content">
+                Penne with neapolitan sausages, broccoli, chilli, garlic, white
+                wine & olive oil
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Cannelloni Pulcinella | 4</h3>
+              <p class="menu-item-content">
+                Rolled fresh pasta stuffed with meat cooked in a tomato and
+                cream sauce
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Pasta San Nicola | 5</h3>
+              <p class="menu-item-content">
+                Fettucine with parma ham, mushrooms, olives, gralic white wine &
+                tomato
+              </p>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-heading">Gnocchi Alla Sorrentina | 6</h3>
+              <p class="menu-item-content">
+                Italian style potato & flour dumplings with tomato, basil &
+                mozzarella cheese
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="section-footer">
+      <div class="grid-footer">
+        <div class="main-links">
+          <a href="/">Home</a>
+          <a href="/#menu">Menu</a>
+          <a href="/reservations/show">Reservations</a>
+          <a href="/reviews">Reviews</a>
+          <a href="login">Log In</a>
+          <div class="icon-thing">
+            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+            <ion-icon class="icon" name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+        <div class="tag-column">
+          <div class="tag-set tag-set-hours">
+            <h2 class="tag-set-heading">Hours</h2>
+            <p>+ Monday-Wednseday: 11am-9pm</p>
+            <p>+ Thursday-Saturday: 11am-10pm</p>
+            <p>+ Closed: Sundays</p>
+          </div>
+          <div class="tag-set">
+            <h2 class="tag-set-heading">Address</h2>
+            <p>
+              + 34 Charlotte St, <br />
+              London, England: W1T 2NH
+            </p>
+          </div>
+          <div class="tag-set">
+            <h2 class="tag-set-heading">Contact</h2>
+            <p>+ 020 7636 1178</p>
+            <p>+ takicontact@takirestaurant.com</p>
+          </div>
+        </div>
+        <div class="tag-column-second">
+          <div class="tag-set tag-set-dining">
+            <h2 class="tag-set-heading">Dining</h2>
+            <p>+ Fine dining in central London Available throughout the year</p>
+          </div>
+          <div class="tag-set">
+            <h2 class="tag-set-heading">Reservations</h2>
+            <p>+ 12 week notices recommended</p>
+          </div>
+        </div>
+      </div>
+      <a href="" class="taki">
+        <h2>TAKI</h2>
+      </a>
+    </footer>
+
+    <script>
+      function open_nav() {
+        document.getElementById("hidden-nav").style.width = "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function close_nav() {
+        document.getElementById("hidden-nav").style.width = "0%";
+      }
+
+      function open_nav_2() {
+        document.getElementById("hidden-nav-2").style.width = "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function close_nav_2() {
+        document.getElementById("hidden-nav-2").style.width = "0%";
+      }
+      function gfgMenu() {
+        const GFG = document.querySelector(".links");
+
+        if (GFG.style.display === "none") {
+          GFG.style.display = "block";
+        } else {
+          GFG.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html {
+  font-size: 62.5%; /* equivalent to 10px */
+}
+
+body {
+  background: #ffe1c7;
+  color: #000;
+  line-height: 1;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-nav {
+  background: #ffeddd;
+  animation: fadeInAnimation ease 1.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.main-nav-list {
+  width: 97%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link-taki {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-review {
+  margin-left: 4.8rem;
+}
+
+.link-sign-in {
+  margin-left: 4.8rem;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 200;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  text-shadow: 0.2px 0.2px 0.2px #000, 0 0 0.5em #000, 0 0 0.1em #000;
+  transition: 500ms;
+}
+
+.taki-nav-link {
+  font-size: 6.4rem;
+  font-weight: 100;
+}
+
+.taki-nav-link:hover {
+  text-shadow: none;
+}
+
+/* REVIEWS */
+
+h1 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.reviews-container {
+  position: absolute;
+  margin: 0 auto;
+  width: 50vw;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.review-card {
+  padding: 1.2rem 1.2rem;
+  width: 45vw;
+  background: #ffeddd;
+  border: 2px solid #ddb892;
+}
+
+.review-name {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.review-review {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.review-rating {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn-delete {
+  padding: 0.8rem 2.4rem;
+  background-color: #ddb892;
+  border: none;
+}
+
+.btn-review {
+  padding: 1.6rem 3.2rem;
+  margin-top: 1.6rem;
+  background-color: #ddb892;
+  border: none;
+}
+
+.btn-delete:hover {
+  background-color: #c8a684;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.btn-review:hover {
+  background-color: #c8a684;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+/* SIDEBARS */
+
+.right {
+  margin-top: 0.35rem;
+  float: right;
+  width: 4rem;
+  height: 100vh;
+  background-image: url("/images/church-on-sunday.svg");
+}
+
+.left {
+  margin-top: 0.35rem;
+  overflow: hidden;
+  height: 100vh;
+  width: 4rem;
+  background-image: url("/images/church-on-sunday.svg");
+  transform: scaleX(-1);
+}

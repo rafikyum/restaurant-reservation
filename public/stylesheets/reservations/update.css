@@ -1,0 +1,224 @@
+/* GENERAL */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 67.5%; /* equivalent to 10px */
+}
+
+body {
+  background: #ffe1c7;
+}
+
+/* NAVIGATION */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-nav {
+  background: #ffeddd;
+  animation: fadeInAnimation ease 1.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.main-nav-list {
+  width: 97%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link-taki {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-review {
+  margin-left: 4.8rem;
+}
+
+.link-sign-in {
+  margin-left: 4.8rem;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 200;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  text-shadow: 0.2px 0.2px 0.2px #000, 0 0 0.5em #000, 0 0 0.1em #000;
+  transition: 500ms;
+}
+
+.taki-nav-link {
+  font-size: 6.4rem;
+  font-weight: 100;
+}
+
+.taki-nav-link:hover {
+  text-shadow: none;
+}
+
+/* BUTTON */
+
+.form-container {
+  position: absolute;
+  width: 40%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.button {
+  padding: 3.2rem 4.8rem;
+  font-size: 3rem;
+  font-weight: 300;
+  background-color: #ddb892;
+  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.button:hover {
+  background-color: #a17c57;
+  transition: 500ms;
+}
+
+/* SIDE PATTERNS */
+
+.right {
+  margin-top: 0.35rem;
+  float: right;
+  width: 4rem;
+  height: 100vh;
+  background-image: url("/images/church-on-sunday.svg");
+}
+
+.left {
+  margin-top: 0.35rem;
+  overflow: hidden;
+  height: 100vh;
+  width: 4rem;
+  background-image: url("/images/church-on-sunday.svg");
+  transform: scaleX(-1);
+}
+
+/* INPUTS */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  border: 1px solid #000;
+  padding: 1.6rem 2.8rem;
+  background-color: transparent;
+  width: 40vw;
+  outline: #a17c57;
+}
+
+.container input:hover {
+  background-color: #f7d8be;
+}
+
+.container input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container label {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.btn {
+  border: 1px solid #000;
+  padding: 1.6rem 2.8rem;
+  background-color: transparent;
+  width: 30vw;
+  align-self: center;
+  margin-top: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #a17c57;
+  transition: 300ms;
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 102em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 42.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 32%;
+  }
+}
